@@ -1,0 +1,425 @@
+/*general*/
+body
+{
+    font-family: 'Arvo', sans-serif;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6   
+{
+font-weight:bold ;
+}
+
+img
+{
+max-width: 100%;
+height: auto;
+}
+
+section .heading
+{
+    text-align:center;
+    padding-bottom: 40px;
+}
+
+.navbar
+{
+    background: #27534d;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav
+{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
+
+.navbar li a
+{
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.acive a
+{
+    color: #27534d !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle
+{
+    border-style: none;
+}
+
+.icon-bar
+{
+    background-color: #fff !important;
+}
+
+/* MOI */
+#about
+{
+    padding-top: 100px;
+    background: #27534d;
+
+}
+
+.profile-picture
+{
+    text-align: center;
+    margin:0 auto;
+    float: none;
+}
+
+#about .heading h2
+{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#about .heading h3
+{
+    color: #000;
+}
+
+.button1
+{
+    font-weight:bold ;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.button1:hover
+{
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#description
+{
+    background-color:#27534d ;
+}
+
+.para{
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+
+}
+
+/* EDUCATION */
+
+#education
+{
+    background: #fff;
+}
+
+#education .heading h2
+{
+    color: #27534d;
+}
+
+.education-block
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 2px solid #27534d;
+    margin-bottom: 20px;
+}
+
+.education-block h5
+{
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block .glyphicon
+{
+    font-size: 40px;
+}
+
+.education-block h3
+{
+    color: #27534d;
+}
+
+.education-block h4
+{
+    margin-bottom: 20px;
+}
+
+.education-block p
+{
+    font-weight: bold;
+    
+}
+
+/* COMPETENCES */
+
+#skills
+{
+    background: #27534d;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+ #skills .heading h2
+{
+    color: #ffffff;
+}
+
+#skills .progress
+{
+    height: 5%;
+    margin: 30px 20px;
+    background: #27534d;
+}
+
+#skills .progress-bar
+{
+    background: #ffffff;
+}
+
+#skills .progress h5
+{
+    color: #27534d;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255); 
+}
+
+
+/* PROJET PERSO/PRO */
+
+#projets .block_pro
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 25px;
+    border-color:#27534d    ;
+}
+
+#projets .img_pro
+{
+    max-width: 100%;
+}
+
+
+p h2 
+{
+    color: #27534d;
+}
+
+
+/*Contact*/
+
+#formulaire
+{
+    background-color: #27534d;
+    background-position: center;
+    width: 100%;
+    height:100%;
+}
+
+.form-group
+{
+    display: flex;
+    justify-content: center;
+}
+
+.labelF
+{
+    color: #27534d;
+    font-size: 18px;
+    font-family: 'Quicksand';
+    margin-top: -10%;
+}
+
+
+.overlay4
+{
+    background-color: white;
+    height: 510px;
+    width: 400px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.overlaybg
+{
+    position: absolute;
+    top: 489px;
+    background-color: #27534d;
+    height: 10px;
+    width: 373px;
+    border-radius: 15px;
+    margin-top: 170px;
+    margin-left: 14px;
+}
+
+
+.contact h2
+{
+    color: #27534d;
+    font-family: 'Arvo';
+    font-weight: bold;
+    padding-top: 45px;
+    text-align: center;
+
+}
+
+#nom
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;  
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#prenom
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;  
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.formnom
+{
+    padding-bottom: 15px;
+}
+
+#mail
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.formemail
+{
+    padding-bottom: 15px;
+}
+
+#objet
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#message
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;  
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+.formphone
+{
+    padding-bottom: 15px;
+}
+
+
+#Subject
+{
+    background-color: #f0f4ff;
+    height: 48px;
+    width: 318px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.formsubject
+{
+    padding-bottom: 15px;
+} 
+
+.mail-to
+{
+    background-color: #27534d;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 32.5%;
+}
+
+.mail-to .btn-mailto
+{
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer
+{
+    background: #fff;
+    padding: 100px;
+}
+
+footer .glyphicon
+{
+    font-size: 25px;
+    margin-bottom: 20px; 
+    margin: 20px;
+    color: #000;
+    height: 30px;
+}
+
+footer .glyphicon:hover
+{
+    font-size: 27px;
+}
+
+footer h5
+{
+    color: #27534d;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 1px;
+}
+/*LOGIN*/
+.form-login
+{
+    float: left;
+}
+.form-login input
+{
+    margin-left: 5%;
+    width: 80%;
+    margin-bottom: 20%;
+}
+
