@@ -19,9 +19,9 @@ height: auto;
 section .heading
 {
     text-align:center;
-    padding-bottom: 40px;
+    padding-bottom: 2%;
 }
-
+/*navbar*/
 .navbar
 {
     background: #27534d;
@@ -87,9 +87,22 @@ section .heading
 
 #about .heading h3
 {
-    color: #000;
+    color: #fff;
 }
 
+.imgPerso
+{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.imgPerso .imgGithub
+{
+    width: 3%;
+    padding-bottom: 2%;
+}
 .button1
 {
     font-weight:bold ;
@@ -126,6 +139,12 @@ section .heading
 #education
 {
     background: #fff;
+}
+
+#educationTitle
+{
+    color: #27534d;
+    text-transform: uppercase;
 }
 
 #education .heading h2
@@ -182,6 +201,14 @@ section .heading
     padding : 0;
     box-sizing: border-box;
 }
+
+#competenceTitle
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+
+}
  #skills .heading h2
 {
     color: #ffffff;
@@ -207,6 +234,11 @@ section .heading
 
 
 /* PROJET PERSO/PRO */
+#RealisationTitle
+{
+    color: #27534d;
+    text-transform: uppercase;
+}
 
 #projets .block_pro
 {
@@ -232,18 +264,29 @@ p h2
 
 /*Contact*/
 
+#contactTitle
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
 #formulaire
 {
     background-color: #27534d;
     background-position: center;
     width: 100%;
     height:100%;
+    padding: 50px 0;
+
 }
 
 .form-group
 {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Afficher les éléments du formulaire en colonne */
+    align-items: center; /* Centrer verticalement */
 }
 
 .labelF
@@ -251,21 +294,18 @@ p h2
     color: #27534d;
     font-size: 18px;
     font-family: 'Quicksand';
-    margin-top: -10%;
+    margin-top: 1%;
 }
 
 
 .overlay4
 {
     background-color: white;
-    height: 510px;
-    width: 400px;
+    max-width: 400px; 
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 30px;
     border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
 .overlaybg
@@ -274,7 +314,7 @@ p h2
     top: 489px;
     background-color: #27534d;
     height: 10px;
-    width: 373px;
+    width: 85%;
     border-radius: 15px;
     margin-top: 170px;
     margin-left: 14px;
@@ -288,15 +328,20 @@ p h2
     font-weight: bold;
     padding-top: 45px;
     text-align: center;
+    margin-top: 0;
 
+}
+
+#contact-form
+{
+    width: 100%;
 }
 
 #nom
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;  
-    margin-top: 10px;
+    width: 100%;  
     border-radius: 10px;
 }
 
@@ -304,8 +349,7 @@ p h2
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;  
-    margin-top: 10px;
+    width: 100%; 
     border-radius: 10px;
 }
 
@@ -318,8 +362,7 @@ p h2
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;
-    margin-top: 10px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -332,8 +375,7 @@ p h2
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;
-    margin-top: 10px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -341,8 +383,7 @@ p h2
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;  
-    margin-top: 10px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -357,7 +398,7 @@ p h2
 {
     background-color: #f0f4ff;
     height: 48px;
-    width: 318px;
+    width: 100%;
     margin-left: 25px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -371,7 +412,7 @@ p h2
 .mail-to
 {
     background-color: #27534d;
-    width: 30%;
+    width: 35%;
     text-align: center;
     border-radius: 10px;
     margin-left: 32.5%;
@@ -387,7 +428,7 @@ p h2
 footer
 {
     background: #fff;
-    padding: 100px;
+    padding: 5%;
 }
 
 footer .glyphicon
@@ -412,6 +453,11 @@ footer h5
     padding-top: 1px;
 }
 /*LOGIN*/
+
+.thumbnail
+{
+    margin-top: 5%;
+}
 .form-login
 {
     float: left;

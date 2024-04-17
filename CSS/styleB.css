@@ -1,0 +1,106 @@
+.navbar
+{
+    background: #27534d;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav
+{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse
+{
+    text-align: center;
+}
+
+.navbar li a
+{
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.acive a
+{
+    color: #27534d !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle
+{
+    border-style: none;
+}
+
+.icon-bar
+{
+    background-color: #fff !important;
+}
+
+/*fiche projet*/
+.projet-block
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.descriptionFiche
+{
+    padding-top: 4%;
+}
+
+.detailFiche
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.heading
+{
+    text-align: center;
+}
+
+/*view projet*/
+
+#view
+{
+    padding-top: 5%;   
+}
+
+.titreViewPro
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #27534d;
+}
+
+.allPro
+{
+    font-weight: bold;
+}
+
+.btnUpdate
+{
+    color: blue;
+}
+
+.btnDelete
+{   
+    color: red;
+}
+
+.btnDeco
+{
+    margin-top: 2%;
+}
+
+/*Update projet*/
+.update
+{
+
+}

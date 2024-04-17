@@ -8,8 +8,7 @@ session_start();
 
 $co = connect();
 
-if (isset($_POST['submit']))
-{
+if (isset($_POST['submit'])) {
     $username = $_POST['username'];
 
     /* hash mot de passe sh256*/
@@ -21,7 +20,7 @@ if (isset($_POST['submit']))
     $query = $co->prepare('SELECT * FROM connexion_portfolio WHERE Login=:username and Password=:password');
     $query->bindParam(':username', $username);
     $query->bindParam(':password', $password);
-    $query->execute();    
+    $query->execute();
 
     $result = $query->fetchall();
 
@@ -29,15 +28,12 @@ if (isset($_POST['submit']))
 
     /* verification existance username dans la base de donnée */
 
-    if($rows==1)
-    {
+    if ($rows == 1) {
         $_SESSION['username'] = $username;
         header("Location: Admin/view.php");
-    }
-    else
-    {
+    } else {
         /* message d'erreur */
-        
+
         $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
         $password = "";
     }
@@ -48,76 +44,77 @@ if (isset($_POST['submit']))
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Connexion</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    </head>
-    
-    <body style="background-color:#27534d;">
-        
-        <!-- section formulaire login mdp -->
-        
-        <section id="login">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="thumbnail">
-            
-                    <form class="form" method="post" name="login">
-                        <h1>Connexion</h1>
-                         
-                        
-                  
-                        <!-- username -->
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="form-login">
-                                <label for="name" class="">Nom d'utilisateur :</label>
-                                <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" class="form-control" value="<?php echo $username; ?>">
-                            </div>
 
-                            <!-- password -->
+<head>
+    <title>Connexion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
 
-                            <div class="form-login">
-                                <label for="password" class="">Mot de passe :</label>
-                                <input type="password" id="passsword" name="password" placeholder="Mot de passe :" class="form-control" value="<?php echo $password; ?>">
-                            </div>
+<body style="background-color:#27534d;">
+
+    <!-- section formulaire login mdp -->
+
+    <section id="login">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="thumbnail">
+
+                <form class="form" method="post" name="login">
+                    <h1>Connexion</h1>
+
+
+
+                    <!-- username -->
+                    <div id="formLogin" class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-login">
+                            <label for="name" class="">Nom d'utilisateur :</label>
+                            <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" class="form-control" value="<?php echo $username; ?>">
                         </div>
-                        
-                        <!-- bouton connexion -->
 
-                        <div class="form-actions">
-                            <input type="submit" value="Connexion " name="submit" class="">
-                             <a id="btnretour" href="index.php" class="btn btn-primary">Retour</a>
+                        <!-- password -->
+
+                        <div class="form-login">
+                            <label for="password" class="">Mot de passe :</label>
+                            <input type="password" id="passsword" name="password" placeholder="Mot de passe :" class="form-control" value="<?php echo $password; ?>">
                         </div>
-                        
-                        
-                        
-                        <!-- message d'erreur -->
+                    </div>
 
-                        <?php 
+                    <!-- bouton connexion -->
 
-                        if (! empty($message)) 
-                        { 
+                    <div class="form-actions">
+                        <input type="submit" value="Connexion " name="submit" class="">
+                        <a id="btnretour" href="index.php" class="btn btn-primary">Retour</a>
+                    </div>
 
-                        ?>
+
+
+                    <!-- message d'erreur -->
+
+                    <?php
+
+                    if (!empty($message)) {
+
+                    ?>
 
                         <p class="errorMessage"><?php echo $message; ?></p>
 
-                        <?php 
+                    <?php
 
-                        } 
+                    }
 
-                        ?>
+                    ?>
 
-                    </form>
-                    
-                </div>
-            </div>    
-           
-        </section>
- 
-        
-    </body>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
 </html>
