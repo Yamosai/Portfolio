@@ -64,9 +64,9 @@ function verifyInput($var)
                 echo "<div class='col-lg-12 col-md-12 col-sm-12'>
                             <div class='projet-block'>
                                 <h3 class='titreFiche'>" . $row['Titre'] . "</h3>
-                                <p class='descriptionFiche'>Déscription : " . $row['Description'] . "</p>
                                 <h4 class='detailFiche'>Détails :</h4>
                                 <div class='col-lg-12 col-md-12 col-sm-12'>
+                                    <p class='descriptionFiche'>Description : " . $row['Description'] . "</p>
                                     <p class='periodeFiche'>Période : " . $row['Date'] . "</p>
                                     <p class='chargeFiche'>Charge de travail : " . $row['Temps'] . "</p>
                                 </div>

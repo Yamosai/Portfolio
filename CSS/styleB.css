@@ -47,9 +47,43 @@
     font-weight: bold;
 }
 
+@media (max-width: 2561px) {
+    .titreFiche
+    {
+        padding-top: 5%;    
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .titreFiche
+    {
+        padding-top: 10%;    
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .titreFiche
+    {
+        padding-top: 15%;    
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
 .descriptionFiche
 {
-    padding-top: 4%;
+    padding-top: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .detailFiche

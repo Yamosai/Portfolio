@@ -1,20 +1,20 @@
 <?php
 // connexion
 
-$dbHost = 'mysql-lyceestvincent.alwaysdata.net';
+#$dbHost = 'mysql-lyceestvincent.alwaysdata.net';
 
-$dbName= "lyceestvincent_ymoncet";
+#$dbName= "lyceestvincent_ymoncet";
 
-$dbUser = "116313_ymoncet";
+#$dbUser = "116313_ymoncet";
 
-$dbUserPasseword = "Minosa2021";
+#$dbUserPasseword = "Minosa2021";
 
-// $dbHost = 'localhost';
+$dbHost = 'localhost';
 
-// $dbName = "portfolio_base";
+$dbName = "portfolio_base";
 
-// $dbUser = "root";
+$dbUser = "root";
 
-// $dbUserPasseword = "";
+$dbUserPasseword = "";
 
 $connection = null;
