@@ -147,7 +147,7 @@ function isEmail($var)
             while ($projet = $statement->fetch()) {
                 echo "<div class='block_pro'>
                         <a class='thumbnail' href='#' data-toggle='modal' data-target='#modal" . $projet['Id'] . "'>
-                            <img class='img_pro' alt='iamge projet " . $projet['Titre'] . "' src='image/" . $projet['Image'] . " 'class=''>
+                            <img class='img_pro' alt='image projet " . $projet['Titre'] . "' src='image/" . $projet['Image'] . " 'class=''>
                         </a>
                         <div class='modal fade' id='modal" . $projet['Id'] . "'> 
                             <div class='modal-dialog'>
