@@ -98,10 +98,36 @@ section .heading
 
 
 }
-.imgPerso .imgGithub
-{
-    width: 3%;
-    padding-bottom: 2%;
+@media (max-width: 2561px) { 
+    .imgPerso .imgGithub
+    {
+        width: 6%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 1023px) { 
+    .imgPerso .imgGithub
+    {
+        width: 10%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 767px) { 
+    .imgPerso .imgGithub
+    {
+        width: 15%;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 150px) { 
+    .imgPerso .imgGithub
+    {
+        width: 15%;
+        padding-bottom: 2%;
+    }
 }
 .button1
 {
