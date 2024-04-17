@@ -92,7 +92,7 @@ if ($_SESSION['username'] != 'Yannis') {
                 <section id="footerBO">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <a class="btnDeco" href="../logout.php">
-                            <span class="btn btn-primary btnDeco">Déconnection</span>
+                            <span class="btn btn-primary btnDeco">Déconnexion</span>
                         </a>
                     </div>
                 </section>
